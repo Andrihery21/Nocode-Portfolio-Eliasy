@@ -1,11 +1,10 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF} from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { SiWebflow, SiWordpress } from "react-icons/si";
+import { BsChatSquareText, BsChatDots } from "react-icons/bs";
 
-
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
-
-const LeftBanner = () => {
+const LeftBanner = ({ onFilterClick }) => {
     const [text] = useTypewriter({
       words: ["Professional Nocoder.", "Bubbler", "Webflow maker", "Wordpress Designer"],
       loop: true,
@@ -49,17 +48,75 @@ const LeftBanner = () => {
           <h2 className="text-base uppercase font-titleFont mb-4">
             BEST SKILL ON
           </h2>
-          <div className="flex gap-12">
-            <span className="bannerIcon">
-             Bubble.io
-            </span>
-            <span className="bannerIcon">
-              Webflow
-            </span>
-            <span className="bannerIcon">
-              Wordpress
-            </span>
-           
+          <div className="flex flex-wrap gap-6">
+            <a 
+              href="#bubble" 
+              className="relative group transition-all duration-300 hover:-translate-y-1 hover:scale-105 block cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+                // Cliquer sur le bouton de filtre correspondant
+                const bubbleButton = document.getElementById('filter-bubble');
+                if (bubbleButton) {
+                  bubbleButton.click();
+                } else {
+                  window.location.hash = 'bubble';
+                }
+              }}
+            >
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-4 rounded-2xl shadow-lg transform transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-500/20">
+                <BsChatDots className="text-3xl text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                  <span className="text-white font-medium text-sm">Bubble.io</span>
+                </div>
+              </div>
+            </a>
+
+            <a 
+              href="#webflow" 
+              className="relative group transition-all duration-300 hover:-translate-y-1 hover:scale-105 block cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+                // Cliquer sur le bouton de filtre correspondant
+                const webflowButton = document.getElementById('filter-webflow');
+                if (webflowButton) {
+                  webflowButton.click();
+                } else {
+                  window.location.hash = 'webflow';
+                }
+              }}
+            >
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-4 rounded-2xl shadow-lg transform transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-500/20">
+                <SiWebflow className="text-3xl text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                  <span className="text-white font-medium text-sm">Webflow</span>
+                </div>
+              </div>
+            </a>
+
+            <a 
+              href="#wordpress" 
+              className="relative group transition-all duration-300 hover:-translate-y-1 hover:scale-105 block cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+                // Cliquer sur le bouton de filtre correspondant
+                const wordpressButton = document.getElementById('filter-wordpress');
+                if (wordpressButton) {
+                  wordpressButton.click();
+                } else {
+                  window.location.hash = 'wordpress';
+                }
+              }}
+            >
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-4 rounded-2xl shadow-lg transform transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gray-500/20">
+                <SiWordpress className="text-3xl text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                  <span className="text-white font-medium text-sm">WordPress</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
