@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe, FaWordpress, FaBolt, FaServer, FaTools, FaBootstrap } from "react-icons/fa";
-import { SiProgress, SiAntdesign, SiTailwindcss } from "react-icons/si";
+import { FaWordpress, FaBolt, FaServer, FaTools, FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 import Title from '../layouts/Title';
 import Card from './Card';
 import Modal from './Modal';
