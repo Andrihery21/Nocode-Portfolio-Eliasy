@@ -7,6 +7,8 @@ const ProjectsCard = ({ title, des, src, imageFit }) => {
           className={imageFit === 'contain' ? 'project-logo-preview' : ''}
           src={src}
           alt={title}
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="project-info">

@@ -4,15 +4,14 @@ import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import monCercleImmo from "../../assets/images/projects/monCercleImmo.jpg";
 import investAcademie from "../../assets/images/projects/investAcademie.jpg";
 import manuelRavier from "../../assets/images/projects/manuelRavier.jpg";
+import simbaPreview from "../../assets/images/projects/simba-preview.webp";
+import trichozenPreview from "../../assets/images/projects/trichozen-preview.webp";
+import allianceHabitatPreview from "../../assets/images/projects/alliance-habitat-preview-local.webp";
+import collaborationCapitalPreview from "../../assets/images/projects/collaboration-capital-preview.webp";
+import autojustPreview from "../../assets/images/projects/autojust-framer-preview-local.webp";
+import autojustAppPreview from "../../assets/images/projects/autojust-lovable-preview.webp";
+import monCercleAppPreview from "../../assets/images/projects/mon-cercle-app-preview.webp";
 import ProjectsCard from './ProjectsCard';
-
-const simbaPreview = "https://simba-digital.ch/wp-content/uploads/2026/06/lion-glass-blue.png";
-const trichozenPreview = "https://lh3.googleusercontent.com/d/1sE5y49dP5WQBrhmghhJaFrptPkRmTyEE";
-const allianceHabitatPreview = "https://cdn.prod.website-files.com/69b1383587d7776c95ca6fd1/69cf6a413bd067df2216b1b2_Professional%20using%20tablet.webp";
-const collaborationCapitalPreview = "https://cdn.prod.website-files.com/661409dfe48993b799562a91/6a68684e6b5909db38244cda_logo%20collaboration%20capital.png";
-const autojustPreview = "https://framerusercontent.com/images/QjLR5rZJRR42SonVPsOoB60zYDM.webp?width=982";
-const autojustAppPreview = "https://app.autojust.fr/lovable-uploads/846169ec-8a4f-4c69-8d22-b18bb867bd97.png";
-const monCercleAppPreview = "https://ac9057afed139780042c65988cc373cb.cdn.bubble.io/cdn-cgi/image/w=,h=,f=auto,dpr=1,fit=contain/f1701958878875x950895513925943800/Thumbnail.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
