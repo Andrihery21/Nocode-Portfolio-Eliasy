@@ -13,7 +13,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+        <Title title="Mon parcours" des="Expérience & compétences" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -30,7 +30,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Education
+            Formation
           </li>
           <li
             onClick={() =>
@@ -43,7 +43,7 @@ const Resume = () => {
               skillData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
-            Professional Skills
+            Compétences
           </li>
           <li
             onClick={() =>
@@ -58,7 +58,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Experience
+            Expérience
           </li>
           <li
             onClick={() =>
@@ -73,7 +73,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Achievements
+            Réalisations
           </li>
         </ul>
       </div>

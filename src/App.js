@@ -6,23 +6,20 @@ import Footer from "./components/footer/Footer";
 import FooterBottom from "./components/footer/FooterBottom";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
-import Resume from "./components/resume/Resume";
 //import Testimonial from "./components/tesimonial/Testimonial";
 
 function App() {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText px-4">
-        <Navbar />
-      <div className="max-w-screen-xl mx-auto">
+    <div className="site-shell">
+      <Navbar />
+      <main className="site-content">
         <Banner />
         <Features />
         <Projects />
-        
-        
-       
+        <Contact />
         <Footer />
         <FooterBottom />
-      </div>
+      </main>
     </div>
   );
 }

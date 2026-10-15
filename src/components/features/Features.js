@@ -40,10 +40,10 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full py-20 border-b-[1px] border-b-black relative"
+      className="w-full border-b-[1px] relative"
     >
-      <Title title="Skills" des="What I Do" />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
+      <Title title="Mon savoir-faire" des="Du concept au produit" />
+      <div className="services-grid">
         <div onClick={handleFrontendClick} className="cursor-pointer">
           <Card
             title="No-Code Frontend"
